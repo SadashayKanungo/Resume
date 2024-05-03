@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page One Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column 20s contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{ragged2e}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Sadashay}{Kanungo}{ 
++91 8178849236 \: | \: \href{mailto:sadashay01@gmail.com}{\bf sadashay01@gmail.com} \: | \: LinkedIn  \href{https://www.linkedin.com/in/sadashay-kanungo/}{\bf @sadashay-kanungo} \: | \: Github \href{https://github.com/SadashayKanungo}{\bf @SadashayKanungo}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     EDUCATION
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\runsubsection{Birla Institute of Technology and Science Pilani, K K Birla Goa Campus \hfill \textit{\normalsize CGPA: 8.23}}
+\newline 
+\descript{B.E. Computer Science With M.Sc. Economics \hfill \textbf{  Jun 2024}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     EXPERIENCE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Nykaa E-Retail Ltd.}
+\descript{| Technology Intern \hfill Jan 2024 – Present}
+\location{Python \textbullet{} SQL \hfill Bangalore, IND}
+\begin{tightemize}
+\item Analysed customer feedback data to compile a comprehensive report on \textbf{Net Promoter Score (NPS)}, which was used by the Board to formulate business targets.
+\item Developed a \textbf{Prediction model} for approximating improvements in NPS with customer experience.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Amazon Inc.}
+\descript{|  Software Development Engineer Intern \hfill Jul 2023 – Dec 2023}
+\location{AWS \textbullet{} Scala \textbullet{} Java \textbullet{} Typescript \hfill Bangalore, IND}
+\begin{tightemize}
+
+\item Contributed to the migration of Sherlock (Financial Reconciliation framework) to \href{https://en.wikipedia.org/wiki/Sarbanes\%E2\%80\%93Oxley\_Act}{\underline{SOX compliant}} architecture. Utilized \textbf{AWS EMR}, \textbf{S3}, and \textbf{Athena} in the process.
+
+\item Implemented changes in \textbf{AWS Step Functions} and \textbf{AWS Lambda} to ensure compatibility of Watson (Reconciliation Monitoring and Reporting framework) with Sherlock's new architecture.
+
+\item Integrated Tickety API service into Watson, enabling the \textbf{deprecation of legacy infrastructure} and \textbf{annual savings of \(\sim \)1000 USD} in hardware costs.
+
+\item Set up \textbf{AWS Quicksight} Dashboards for automated reporting and data filtering and visualization.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{W3Dev Pvt. Ltd.}
+\descript{|  Blockchain Development Intern \hfill Dec 2021 – Jan 2022}
+\location{Ethereum \textbullet{} Solidity \textbullet{} JavaScript \textbullet{} GraphQL \hfill Remote}
+\begin{tightemize}
+
+\item Developed and deployed \textbf{Smart Contracts} on \textbf{Ethereum} for an \textbf{NFT Marketplace}.
+
+\item Architectured a \textbf{GraphQL} Database for NFT Marketplace's on-chain data using \href{https://thegraph.com/docs/en/network/overview/}{\underline{The Graph Network}}.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Platifi Solutions Ltd.}
+\descript{|  Software Development Intern \hfill May 2021 – July 2021}
+\location{MongoDB \textbullet{} Express.js \textbullet{} React.js \textbullet{} Node.js \textbullet{} ElasticSearch \hfill Remote}
+\begin{tightemize}
+\item Led team of 6 interns to design and develop a {\bf Covid-Tracker} with {\bf MERN stack}.
+\item Developed a POC to demonstrate {\bf Autocomplete} functionality using {\bf ElasticSearch}.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     PROJECTS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Elephant.ai}
+\descript{| Freelance @ Blue Rocket LLC \hfill 
+\href{https://sadashaykanungo.github.io/Resume/BlueRocketLOR.pdf}{LOR \small\nearrow}
+\space\space
+\href{https://elephant.ai}{LINK \small\nearrow}}
+\location{ChatGPT-API \textbullet{} Flask \textbullet{} MongoDB \textbullet{} React.js \hfill April 2023 – May 2023}
+\begin{tightemize}
+\item A \textbf{No-Code Platform} for business owners to create \textbf{custom GPT-powered chatbots} for their websites.
+\item Elephant.ai (v1.0) was adopted by \textbf{1,500+ paying customers} in a span of 9 months.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{NFT-Toolbox}
+\descript{|  Open Source @ Google Summer of Code \hfill
+\href{https://medium.com/scorelab/search?q=sadashay+kanungo}
+{BLOG \small\nearrow}
+\space\space\href{https://summerofcode.withgoogle.com/programs/2022/projects/2PHsoS0l}{LINK \small\nearrow}}
+\location{Typescript \textbullet{} Node.js \textbullet{} Ethereum \textbullet{} IPFS \textbullet{} Mocha \textbullet{} Docusaurus \hfill June 2022 – Sep 2022}
+\begin{tightemize}
+\item An NPM package for seamless integration of all \textbf{NFT related functionalities} in Web2 projects.
+\item NFT Toolbox was introduced as a new project in GSoC'22. It has been under the aegis of GSoC ever since and continues to be developed.
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Makeup Verification System}
+% \descript{| Blockchain \hfill 
+% \href{https://github.com/SadashayKanungo/MakeupVerificationSystem}{CODE \small\nearrow}
+% \space\space
+% \href{https://makeup-system.onrender.com/}{LINK \small\nearrow}}
+% \location{Python \textbullet{} FastAPI \hfill Sep 2022 – Dec 2022}
+% \begin{tightemize}
+% \item A robust system for {\bf verification of Medical documents} submitted by students to avail Makeups for missed examinations.
+% \item Implemented {\bf Blockchain for scratch} with {\bf Python} and {\bf FastAPI}.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Chat App}
+% \descript{| Web Sockets \hfill 
+% \href{https://github.com/SadashayKanungo/ChatApp-NodeJSCourse}{CODE \small\nearrow}
+% \space\space
+% \href{https://kanungo-chat.onrender.com/}{LINK \small\nearrow}}
+% \location{Node.js \textbullet{} Socket.io \hfill Sep 2022 – Dec 2022}
+% \begin{tightemize}
+% \item A Simplistic Live \textbf{Chatting Application}, with support for \textbf{multiple concurrent chat rooms}.
+% \item Developed with Socket.io and Node.js.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     SKILLS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\runsubsection{Languages}
+\descript{\large :\: {TypeScript,\, JavaScript,\, Java,\, Python,\, C++,\, Scala,\, Kotlin,\, SQL,\, Solidity}}
+
+\runsubsection{Frameworks}
+\descript{\large :\: {Node.js,\, React.js,\, Flask,\, FastAPI,\, GraphQL,\, Mocha,\, Ethers.js}}
+
+\runsubsection{Technologies}
+\descript{\large :\: {Amazon Web Services,\, MongoDB,\, ElasticSearch,\, Ethereum,\, NFTs}}
+
+\sectionsep
+
+\end{document}
